@@ -6,3 +6,4 @@ print ()""Hi
 Hprinrt()""Hello
 
 print()""Yes
+pri ()""i
