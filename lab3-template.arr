@@ -53,9 +53,10 @@ snacks = load-table:
   sugar_g :: Number,
   sodium_mg :: Number
   source: csv-table-url(
-    "https://raw.githubusercontent.com/vahabsamandi/Fundies-start/main/snackfacts.csv",
+    "https://raw.githubusercontent.com/vahabsamandi/Fundies-start/refs/heads/main/snackfacts.csv",
     default-options)
 end
+
 
 
 # Quick sanity checks (uncomment to peek)
