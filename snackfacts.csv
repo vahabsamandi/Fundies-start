@@ -1,21 +1,21 @@
 name,category,is_healthy,calories,sugar_g,sodium_mg
-Corn Chips,Chips,false,150,1,180
-Apple Slices,Fruit,true,60,11,0
-Trail Mix,Nuts,true,190,9,75
-Granola Bar,Bars,true,140,7,90
-Oat Cookies,Cookies,false,160,12,110
+Corn_Chips,Chips,false,150,1,180
+Apple_Slices,Fruit,true,60,11,0
+Trail_Mix,Nuts,true,190,9,75
+Granola_Bar,Bars,true,140,7,90
+Oat_Cookies,Cookies,false,160,12,110
 Banana,Fruit,true,95,14,1
 Pretzels,Chips,false,110,1,380
-Peanut Pack,Nuts,true,170,2,150
-Protein Bar,Bars,true,200,5,150
-Chocolate Cookie,Cookies,false,180,15,120
-Baked Crisps,Chips,false,130,2,130
-Dried Mango,Fruit,false,120,23,5
+Peanut_Pack,Nuts,true,170,2,150
+Protein_Bar,Bars,true,200,5,150
+Chocolate_Cookie,Cookies,false,180,15,120
+Baked_Crisps,Chips,false,130,2,130
+Dried_Mango,Fruit,false,120,23,5
 Almonds,Nuts,true,170,1,0
-Oat Bar,Bars,true,160,6,85
+Oat_Bar,Bars,true,160,6,85
 Shortbread,Cookies,false,190,9,90
-Veggie Chips,Chips,false,140,3,190
+Veggie_Chips,Chips,false,140,3,190
 Grapes,Fruit,true,62,13,2
 Cashews,Nuts,true,160,2,95
-Seeds Mix,Nuts,true,180,1,120
-Berry Bar,Bars,true,150,10,75
+Seeds_Mix,Nuts,true,180,1,120
+Berry_Bar,Bars,true,150,10,75

@@ -45,13 +45,21 @@ include table
 include image
 include csv
 
+# snacks = load-table:
+#   name :: String,
+#   category :: String,
+#   is_healthy :: Boolean,
+#   calories :: Number,
+#   sugar_g :: Number,
+#   sodium_mg :: Number
+#   source: csv-table-url(
+#     "https://raw.githubusercontent.com/vahabsamandi/Fundies-start/refs/heads/main/snackfacts.csv",
+#     default-options)
+# end
+
 snacks = load-table:
-  name :: String,
-  category :: String,
-  is_healthy :: Boolean,
-  calories :: Number,
-  sugar_g :: Number,
-  sodium_mg :: Number
+  name :: String, category :: String, is_healthy :: Boolean,
+  calories :: Number, sugar_g :: Number, sodium_mg :: Number
   source: csv-table-url(
     "https://raw.githubusercontent.com/vahabsamandi/Fundies-start/refs/heads/main/snackfacts.csv",
     default-options)
