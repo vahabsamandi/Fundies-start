@@ -45,18 +45,6 @@ include table
 include image
 include csv
 
-# snacks = load-table:
-#   name :: String,
-#   category :: String,
-#   is_healthy :: Boolean,
-#   calories :: Number,
-#   sugar_g :: Number,
-#   sodium_mg :: Number
-#   source: csv-table-url(
-#     "https://raw.githubusercontent.com/vahabsamandi/Fundies-start/refs/heads/main/snackfacts.csv",
-#     default-options)
-# end
-
 snacks = load-table:
   name :: String, category :: String, is_healthy :: Boolean,
   calories :: Number, sugar_g :: Number, sodium_mg :: Number
@@ -64,6 +52,7 @@ snacks = load-table:
     "https://raw.githubusercontent.com/vahabsamandi/Fundies-start/refs/heads/main/snackfacts.csv",
     default-options)
 end
+
 
 
 
@@ -86,8 +75,10 @@ fun is_fruit(r): r["category"] == "Fruit" end
 fruit = filter-with(snacks, is_fruit)
 
 # TODO 1.3: Healthy AND <= 120 calories
-fun is_healthy_lowcal(r): (r["is_healthy"] and r["calories"]) <= 120 end
-healthy_lowcal = filter-with(snacks, is_healthy_lowcal)
+fun is_healthy_lowcal(r):
+  (r["is_healthy"] and r["calories"]) <= 120
+end
+
 
 # ------------------------------------------------------------
 # SECTION 2: Sorting, selecting, adding columns/rows
