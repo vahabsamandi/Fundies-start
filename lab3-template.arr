@@ -49,7 +49,7 @@ snacks = load-table:
   name :: String, category :: String, is_healthy :: Boolean,
   calories :: Number, sugar_g :: Number, sodium_mg :: Number
   source: csv-table-url(
-    "https://raw.githubusercontent.com/vahabsamandi/Fundies-start/refs/heads/main/snackfacts.csv",
+      "https://raw.githubusercontent.com/vahabsamandi/Fundies-start/refs/heads/main/snackfacts (1).csv",
     default-options)
 end
 
@@ -73,11 +73,17 @@ r0 = snacks.row-n(0)
 # TODO 1.2: Write a predicate to identify fruits and build a fruit-only table
 fun is_fruit(r): r["category"] == "Fruit" end
 fruit = filter-with(snacks, is_fruit)
+fruit
 
 # TODO 1.3: Healthy AND <= 120 calories
 fun is_healthy_lowcal(r):
-  (r["is_healthy"] and r["calories"]) <= 120
+  (r["is_healthy"] == "true") and (string-to-number(r["calories"]) <= 120) 
 end
+
+is_healthy_lowcal(snacks.row-n(0))
+
+is_healthy_less_Cal = filter-with(snacks, is_healthy_lowcal)
+is_healthy_less_Cal
 
 
 # ------------------------------------------------------------
